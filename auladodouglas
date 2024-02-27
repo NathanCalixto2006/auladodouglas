@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class MediaAritmetica {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        double nota1 = 7;
+        double nota2 = 8;
+        double nota3 = 8;
+        double nota4 = 5;
+        
+        double media = (nota1 + nota2 + nota3 + nota4) / 4;
+        
+        System.out.println("A média aritmética das notas é: " + media);
+        
+        scanner.close();
+    }
+}
+
+
+import java.util.Scanner;
+
+public class ConversorDolarReal {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite a cotação do dólar: ");
+        double cotacaoDolar = scanner.nextDouble();
+        
+        System.out.print("Digite a quantidade de dólares: ");
+        double quantidadeDolares = scanner.nextDouble();
+        
+        double valorEmReais = quantidadeDolares * cotacaoDolar;
+        
+        System.out.println("O valor em reais é: R$ " + valorEmReais);
+        
+        scanner.close();
+    }
+}
